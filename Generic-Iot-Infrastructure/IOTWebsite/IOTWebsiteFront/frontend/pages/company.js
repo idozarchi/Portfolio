@@ -16,6 +16,7 @@ export default function CompanyPage() {
       .then((data) => {
         console.log("Fetched Products:", data);
         setProducts(data);
+        
       })
       .catch((error) => console.error("Error fetching products:", error));
   }, [companyID]);
